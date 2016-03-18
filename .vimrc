@@ -65,4 +65,6 @@ set ruler
 set laststatus=2
 syntax on
 set hlsearch
+set mouse=a
+set confirm
 
