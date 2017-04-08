@@ -6,6 +6,10 @@ export ANSIBLE_COW_SELECTION=random
 # 0=cowsay 1=no cowsay
 export ANSIBLE_NOCOWS=1
 
+# bash history
+export HISTSIZE=1000000000
+export HISTFILESIZE=$HISTSIZE
+
 alias br="source ~/.bash_profile"
 alias dev="cd ~/Development"
 alias ls="ls -FGgh"
@@ -13,7 +17,6 @@ alias ls="ls -FGgh"
 export PROMPT_COMMAND='if [ "$(id -u)" -ne 0 ]; then echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history 1)" >> ~/.logs/bash-history-$(date "+%Y-%m-%d").log; fi'
 
 alias kill-dns-cache="sudo killall -HUP mDNSResponder"
-docker-eval () { docker-machine env "$@"; eval $(docker-machine env "$@"); }
 logs () { grep -r "$@" ~/.logs; }
 
 alias grep='grep --color=auto'
@@ -52,6 +55,10 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
 
+
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
 
 
 export NODE_PATH=/usr/local/lib/node_modules
