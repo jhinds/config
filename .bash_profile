@@ -22,7 +22,7 @@ logs () { grep -r "$@" ~/.logs; }
 alias grep='grep --color=auto'
 alias git-undo="git reset --soft HEAD~"
 alias git-lg="git log --color --graph --abbrev-commit --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset'"
-alias scripts="cdd ~/Development/scripts"
+alias scripts="cd ~/Development/scripts"
 alias rm-pyc="find . -name "*.pyc" -exec rm -rf {} \;"
 alias ~="cd ~"
 alias vundle-install="vim +PluginInstall +qall"
