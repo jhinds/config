@@ -21,21 +21,19 @@ logs () { grep -r "$@" ~/.logs; }
 
 alias grep='grep --color=auto'
 alias git-undo="git reset --soft HEAD~"
-alias dvenv="deactivate"
-alias vibp="vi ~/.bash_profile"
 alias git-lg="git log --color --graph --abbrev-commit --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset'"
-alias virtualenvs="cd ~/Development/Virtualenvs"
+alias scripts="cdd ~/Development/scripts"
 alias rm-pyc="find . -name "*.pyc" -exec rm -rf {} \;"
 alias ~="cd ~"
 alias vundle-install="vim +PluginInstall +qall"
+alias ns="--namespace"
+alias kl="kubectl"
+
 
 # parse for current branch
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
-
-# function to activate virtualenvs
-venv () { source ~/Development/virtualenvs/"$@"/bin/activate; }
 
 # Black       0;30     Dark Gray     1;30
 # Blue        0;34     Light Blue    1;34
