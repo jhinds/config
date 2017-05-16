@@ -1,7 +1,6 @@
 #!/bin.bash
 
 # copy over brewfile & install
-cp Brewfile Brewfile
 brew bundle
 
 # copy over bash_profile
