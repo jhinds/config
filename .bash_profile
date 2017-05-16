@@ -26,7 +26,7 @@ alias scripts="cd ~/Development/scripts"
 alias rm-pyc="find . -name "*.pyc" -exec rm -rf {} \;"
 alias ~="cd ~"
 alias vundle-install="vim +PluginInstall +qall"
-alias ns="--namespace"
+alias scripts="cd ~/Development/scripts"
 alias kl="kubectl"
 
 
@@ -62,3 +62,6 @@ fi
 export NODE_PATH=/usr/local/lib/node_modules
 
 eval "$(thefuck --alias)"
+
+####################################### org specific ########################################
+source ~/.bash_profile_org
