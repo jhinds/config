@@ -1,0 +1,11 @@
+*.retry
+*.log
+*.log.*
+*if-you-need-to-delete-this-open-an-issue-async-disk-cache/
+target_dir/
+*.pyc
+test-results/
+.idea
+*.DS_Store
+*.tfstate*
+tags
