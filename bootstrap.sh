@@ -6,6 +6,9 @@
 # copy over brewfile & install
 brew bundle
 
+# make .logs directory
+mkdir ~/.logs
+
 # copy over bash_profile
 cp .bash_profile ~/.bash_profile
 source ~/.bash_profile
