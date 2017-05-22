@@ -1,6 +1,5 @@
 atom-beautify@0.29.17
 atom-elixir@0.2.1
-builder-go@1.0.1
 go-config@1.2.4
 go-debug@0.1.22
 go-get@2.1.1
