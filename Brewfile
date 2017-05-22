@@ -1,4 +1,5 @@
 cask_args appdir: '/Applications'
+cask 'java'
 brew 'apache-spark'
 brew 'autoconf'
 brew 'bash-completion'
