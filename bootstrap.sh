@@ -10,6 +10,9 @@ brew bundle
 cp .bash_profile ~/.bash_profile
 source ~/.bash_profile
 
+# install Vundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 # copy over vimrc
 cp .vimrc ~/.vimrc
 
