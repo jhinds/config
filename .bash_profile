@@ -64,4 +64,7 @@ export NODE_PATH=/usr/local/lib/node_modules
 eval "$(thefuck --alias)"
 
 ####################################### org specific ########################################
-source ~/.bash_profile_org
+if [ -f ~/.bash_profile_org ]; then
+    source ~/.bash_profile_org
+fi
+
