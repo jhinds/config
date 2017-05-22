@@ -26,9 +26,9 @@ cp .gitignore ~/.gitignore
 mkdir -p ~/Development
 
 # make folder for git hooks
-mkdir -p ~/Development/git-hooks
-cp -r git-hooks ~/Development/git-hooks
-git config --global core.hooksPath ~/Development/git-hooks/
+mkdir -p ~/Development/.git-hooks
+cp -r .git-hooks/ ~/Development/.git-hooks/
+git config --global core.hooksPath ~/Development/.git-hooks/
 
 # install atom packages
 cp atom_packages ~/Development/atom_packages
