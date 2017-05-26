@@ -10,6 +10,8 @@ export ANSIBLE_NOCOWS=1
 export HISTSIZE=1000000000
 export HISTFILESIZE=$HISTSIZE
 
+export JAVA_HOME=$(/usr/libexec/java_home)
+
 alias br="source ~/.bash_profile"
 alias dev="cd ~/Development"
 alias ls="ls -FGgh"
@@ -27,7 +29,6 @@ alias rm-pyc="find . -name "*.pyc" -exec rm -rf {} \;"
 alias ~="cd ~"
 alias vundle-install="vim +PluginInstall +qall"
 alias scripts="cd ~/Development/scripts"
-alias kl="kubectl"
 
 
 # parse for current branch
@@ -62,6 +63,7 @@ fi
 export NODE_PATH=/usr/local/lib/node_modules
 export PYSPARK_DRIVER_PYTHON=ipython
 export PYSPARK_DRIVER_PYTHON_OPTS='notebook' pyspark
+export SPARK_HOME="/usr/local/Cellar/apache-spark/2.1.0/libexec/"
 
 eval "$(thefuck --alias)"
 
