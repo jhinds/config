@@ -60,8 +60,11 @@ fi
 
 
 export NODE_PATH=/usr/local/lib/node_modules
+export PYSPARK_DRIVER_PYTHON=ipython
+export PYSPARK_DRIVER_PYTHON_OPTS='notebook' pyspark
 
 eval "$(thefuck --alias)"
+
 
 ####################################### org specific ########################################
 if [ -f ~/.bash_profile_org ]; then
