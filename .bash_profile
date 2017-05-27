@@ -67,6 +67,8 @@ export SPARK_HOME="/usr/local/Cellar/apache-spark/2.1.1/libexec"
 
 eval "$(thefuck --alias)"
 
+# for jupyter
+export BROWSER=/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
 
 ####################################### org specific ########################################
 if [ -f ~/.bash_profile_org ]; then
