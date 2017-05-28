@@ -9,4 +9,4 @@ test-results/
 *.DS_Store
 *.tfstate*
 tags
-.ipynb_checkpoint/
+.ipynb_checkpoints/
