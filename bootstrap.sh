@@ -21,6 +21,7 @@ cp .vimrc ~/.vimrc
 
 # copy over gitignore
 cp .gitignore ~/.gitignore
+git config --global core.excludesfile ~/.gitignore
 
 # make development folder
 mkdir -p ~/Development
