@@ -1,5 +1,5 @@
 ################################### generic configuration #########################################
-export PATH="/Users/jonathanhinds/Development/anaconda3/bin:/usr/local/bin:$PATH"
+export PATH="/Users/jonathanhinds/Development/anaconda3/bin:/usr/local/bin:/usr/local/bin/go:$PATH"
 
 # ansible ascii art
 export ANSIBLE_COW_SELECTION=random
