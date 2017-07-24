@@ -9,5 +9,6 @@ language-elixir@0.17.0
 language-terraform@0.8.0
 linter@1.11.18
 linter-terraform-syntax@1.1.2
+magicpython@1.0.11
 merge-conflicts@1.4.4
 sort-lines@0.14.0
