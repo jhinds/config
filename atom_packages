@@ -8,6 +8,7 @@ language-docker
 language-elixir
 language-terraform
 linter
+linter-solidity
 linter-terraform-syntax
 magicpython
 merge-conflicts
