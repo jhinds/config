@@ -1,0 +1,6 @@
+npm install -g bower
+npm install -g create-react-app
+npm install -g ember-cli
+npm install -g reactql
+npm install -g truffle
+npm install -g webpack
