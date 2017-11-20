@@ -34,3 +34,6 @@ git config --global core.hooksPath ~/Development/.git-hooks/
 # install atom packages
 cp atom_packages ~/Development/atom_packages
 apm install --packages-file ~/Development/atom_packages
+
+# install minikube
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.23.0/minikube-darwin-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
