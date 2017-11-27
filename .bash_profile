@@ -36,6 +36,10 @@ parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
+kube-ns() {
+    kubectl config set-context $(kubectl config current-context) --namespace="@"
+}
+
 # Black       0;30     Dark Gray     1;30
 # Blue        0;34     Light Blue    1;34
 # Green       0;32     Light Green   1;32
