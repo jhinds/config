@@ -74,6 +74,9 @@ eval "$(thefuck --alias)"
 # for jupyter
 export BROWSER=/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
 
+# for rbenv initilization
+eval "$(rbenv init -)"
+
 ####################################### org specific ########################################
 if [ -f ~/.bash_profile_org ]; then
     source ~/.bash_profile_org
