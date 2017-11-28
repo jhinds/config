@@ -6,6 +6,9 @@
 # copy over brewfile & install
 brew bundle
 
+# force link imagemagick
+brew link imagemagick@6 --force
+
 # make .logs directory
 mkdir ~/.logs
 
