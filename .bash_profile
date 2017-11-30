@@ -36,8 +36,21 @@ parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
+# set kubernetes current namespace
 kube-ns() {
     kubectl config set-context $(kubectl config current-context) --namespace="@"
+}
+
+# set the env file that is of format:
+# 
+# APPLE=bees
+# TACO=salad
+# BLUE=berry
+#
+setenv() {
+	set -a
+	. ./$1
+	set +a
 }
 
 # Black       0;30     Dark Gray     1;30
