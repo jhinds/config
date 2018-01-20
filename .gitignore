@@ -12,3 +12,4 @@ tags
 .ipynb_checkpoints/
 .terraform
 .vagrant
+worktree*
