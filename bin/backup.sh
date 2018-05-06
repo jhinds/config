@@ -3,7 +3,7 @@
 set -e
 set -o pipefail
 
-echo -n "Backing Up\n"
+echo -e "Backing Up\n"
 
 backupTime=$(date "+%F.%H-%M-%S")
 
