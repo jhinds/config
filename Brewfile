@@ -63,7 +63,7 @@ brew "tmux-cssh"
 brew "tree"
 brew "watchman"
 brew "wget"
-brew "yarn"
+brew "yarn", link: false
 brew "zookeeper"
 brew "zsh"
 brew "datawire/blackbird/telepresence"
