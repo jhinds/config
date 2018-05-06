@@ -32,6 +32,7 @@ brew "kompose"
 brew "kubernetes-cli"
 brew "kops"
 brew "kubernetes-helm"
+brew "lastpass-cli", args: ["with-pinentry"]
 brew "libmagic"
 brew "maven"
 brew "mercurial"
@@ -49,7 +50,7 @@ brew "r"
 brew "ruby-build"
 brew "rbenv"
 brew "redis", restart_service: true
-brew "ruby"
+brew "ruby", link: false
 brew "s3fs"
 brew "sbt"
 brew "scala"
