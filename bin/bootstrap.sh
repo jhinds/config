@@ -5,6 +5,7 @@ set -o pipefail
 
 echo -n "Bootstrapping\n"
 
+# make development directories
 mkdir -p ~/Development
 mkdir -p ~/Development/.git-hooks
 
@@ -13,16 +14,6 @@ mkdir -p ~/Development/.git-hooks
 
 # # copy over brewfile & install
 brew bundle
-
-# # force link imagemagick
-# brew link imagemagick@6 --force
-
-# # make .logs directory
-# mkdir ~/.logs
-#
-# # copy over bash_profile
-# cp .bash_profile ~/.bash_profile
-# source ~/.bash_profile
 
 cp config.fish ~/.config/fish/config.fish
 
@@ -45,3 +36,9 @@ apm install --packages-file ~/config/atom_packages
 
 # # install python requirements
 pip3 install -r requirements.txt
+
+# TODO: update for bash profiles
+# # copy over bash_profile
+# cp .bash_profile ~/.bash_profile
+# source ~/.bash_profile
+# TODO: update for npm installs
