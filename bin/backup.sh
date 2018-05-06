@@ -5,7 +5,7 @@ set -o pipefail
 
 echo -n 'Backing Up'
 
-git checkout -b backup/$(date "+%F/%H.%M.%S")
+git checkout -b backup/$(date "+%F.%H-%M-%S")
 brew bundle dump --force
 cp ~/.gitconfig ~/config/.gitconfig
 cp ~/.gitignore ~/config/.gitignore
@@ -16,5 +16,6 @@ cp ~/.config/fish/config.fish ~/config/config.fish
 
 git add .
 git commit -m 'Latest Backup'
-git push --set-upstream origin backup/$(date "+%F/%H.%M.%S")
+git push --set-upstream origin backup/$(date "+%F.%H-%M-%S")
 git push
+git checkout master
