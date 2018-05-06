@@ -27,7 +27,7 @@ brew bundle
 cp config.fish ~/.config/fish/config.fish
 
 # # install Vundle
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+! git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 #
 # # copy over vimrc
 cp .vimrc ~/.vimrc
