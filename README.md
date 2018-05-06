@@ -2,11 +2,11 @@
 
 This is where I am keeping my configs so they are all in once place.
 
-Install Git Repo
+#### Install Git Repo
 `git clone https://github.com/jhinds/config.git`
 
-Bootstrap Machine with Configs
+#### Bootstrap Machine with Configs
 `make bootstrap`
 
-Backup Configs
+#### Backup Configs
 `make backup`
