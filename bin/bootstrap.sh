@@ -3,6 +3,8 @@
 set -e
 set -o pipefail
 
+echo -n "Bootstrapping\n"
+
 mkdir -p ~/Development
 mkdir -p ~/Development/.git-hooks
 
