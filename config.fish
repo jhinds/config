@@ -1,7 +1,8 @@
 
 export GOPATH=/Users/jhinds/go
 
-set -gx PATH $PATH $GOPATH/bin $HOME/anaconda3/bin $HOME/.cargo/bin
+set -gx PATH $PATH $GOPATH/bin $HOME/anaconda3/bin $HOME/.cargo/bin $HOME/Development/me/istio-0.7.1/bin 
+
 
 set JAVA_8_HOME (/usr/libexec/java_home -v1.8)
 set JAVA_10_HOME (/usr/libexec/java_home -v10)
@@ -88,3 +89,4 @@ source (conda info --root)/etc/fish/conf.d/conda.fish
 function postman
 	open -a Postman
 end
+

@@ -7,6 +7,10 @@ call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
+
+" fish syntax
+Plugin 'dag/vim-fish'
+
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
@@ -52,8 +56,17 @@ Plugin 'vim-scripts/FuzzyFinder'
 " create closing brackets, quotes, etc.
 Plugin 'vim-scripts/AutoClose'
 
+" needed for FuzzyFinder
+Plugin 'vim-scripts/L9'
+
+" for rust"
+Plugin 'rust-lang/rust.vim'
+
+Plugin 'JamshedVesuna/vim-markdown-preview'
+
 call vundle#end()
 filetype plugin indent on
+
 
 map <F2> :NERDTreeToggle<CR>
 map <F8> :TagbarToggle<CR>
