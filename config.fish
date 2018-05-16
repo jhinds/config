@@ -46,6 +46,10 @@ function kns
 	kubectl config set-context (kubectl config current-context) --namespace=$argv
 end
 
+function kwhoami
+	kubectl config current-context
+end
+
 alias ls="ls -FGgh"
 
 function me
