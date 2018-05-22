@@ -42,8 +42,16 @@ function fvi
 	vi ~/.config/fish/config.fish
 end
 
-function kns
+function ns
 	kubectl config set-context (kubectl config current-context) --namespace=$argv
+end
+
+function kwhoami
+	kubectl config current-context
+end
+
+function pods 
+	kubectl get pods $argv
 end
 
 alias ls="ls -FGgh"
