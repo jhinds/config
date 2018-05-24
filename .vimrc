@@ -24,7 +24,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'klen/python-mode'
 
 " vim debugging tool for python (also supports php -ew!)
-Plugin 'jaredly/vim-debug'
+""Plugin 'jaredly/vim-debug'
 
 " easy way to browse tags of the current file
 Plugin 'majutsushi/tagbar'
