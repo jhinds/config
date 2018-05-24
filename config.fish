@@ -6,7 +6,7 @@ set -gx PATH $PATH $GOPATH/bin $HOME/anaconda3/bin $HOME/.cargo/bin $HOME/Develo
 
 set JAVA_8_HOME (/usr/libexec/java_home -v1.8)
 set JAVA_10_HOME (/usr/libexec/java_home -v10)
-
+set -gx JAVA_HOME $JAVA_8_HOME
 
 function ops
     cd ~/Development/OpenGov/opendata/opendata-ops
