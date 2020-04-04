@@ -5,17 +5,13 @@ set -o pipefail
 
 printf "Bootstrapping\n"
 
-# make development directories
-mkdir -p ~/Development
-mkdir -p ~/Development/.git-hooks
-
-# install homebrew
+printf "Install Homebrew\n"
 if ! [ -x "$(which brew)" ]; then
   echo 'Homebrew is not installed. Going to install Homebrew' >&2
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-# copy over brewfile & install
+printf "Copy Over Brewfile and Install\n"
 brew update
 brew bundle
 
@@ -31,9 +27,9 @@ fi
 
 
 # install Vundle
-if [ ! -d "~/.vim/bundle/Vundle.vim" ]; then
+if [ -d "~/.vim/bundle/Vundle.vim" ]; then
   echo 'Vundle is not installed. Going to install Vundle' >&2
-  ! git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
 
 # # copy over vimrc
@@ -45,17 +41,8 @@ cp .gitconfig ~/.gitconfig
 git config --global core.excludesfile ~/.gitignore
 
 # make folder for git hooks
-cp -r ./.git-hooks ~/Development/.git-hooks/
-git config --global core.hooksPath ~/Development/.git-hooks/
-
-# install atom packages
-apm install --packages-file ~/config/atom_packages
+cp -r ./.git-hooks ~/Documents/.git-hooks
+git config --global core.hooksPath ~/Documents/.git-hooks/
 
 # # install python requirements
 pip3 install -r requirements.txt
-
-# TODO: update for bash profiles
-# # copy over bash_profile
-# cp .bash_profile ~/.bash_profile
-# source ~/.bash_profile
-# TODO: update for npm installs
