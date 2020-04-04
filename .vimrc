@@ -35,20 +35,11 @@ Plugin 'scrooloose/syntastic'
 " python autocompletion
 Plugin 'davidhalter/jedi-vim'
 
-" ruby on rails tools 
-Plugin 'tpope/vim-rails'
-
-" helper plugin for ruby
-Plugin 'vim-ruby/vim-ruby'
-
 " run bundle commands from inside vim
 Plugin 'tpope/vim-bundler'
 
 " run ruby tests from vim
 Plugin 'skalnik/vim-vroom'
-
-" add end in ruby scripts
-Plugin 'tpope/vim-endwise'
 
 " easy way to find files in vim
 Plugin 'vim-scripts/FuzzyFinder'

@@ -17,7 +17,7 @@ function current_git_branch
 	git name-rev --name-only HEAD 2> /dev/null
 end
 
-function updatevim
+function vimupdate
     set -lx SHELL (which sh)
     vim +BundleInstall! +BundleClean +qall
 end
