@@ -10,7 +10,7 @@ set -gx PATH $PATH $HOME/.cargo/bin
 set -gx PATH $PATH $HOME/.ghcup/bin
 set -gx PATH $PATH $HOME/Library/Python/3.7/bin
 
-set -gx GOPATH /Users/jhinds/go
+set -gx GOPATH /Users/jonathanhinds/go
 
 abbr fr "source ~/.config/fish/config.fish"
 abbr fvi "vi ~/.config/fish/config.fish"
@@ -21,6 +21,10 @@ abbr vu "vim +PluginInstall +qall"
 abbr gs "git status"
 abbr ga "git add ."
 abbr gc "git commit -m"
+abbr ti "terraform init"
+abbr tp "terraform plan"
+abbr ta "terraform apply"
+abbr tf "terraform fmt -recursive (git rev-parse --show-toplevel)"
 
 # for ubuntu laptop
 abbr ssh-ubuntu "ssh -i ~/.ssh/personal_ssh.pem jonathanhinds@192.168.1.175"
