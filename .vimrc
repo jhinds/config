@@ -1,5 +1,7 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
+" "filetype plugin indent on
+
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -54,6 +56,8 @@ Plugin 'vim-scripts/L9'
 Plugin 'rust-lang/rust.vim'
 
 Plugin 'JamshedVesuna/vim-markdown-preview'
+
+Plugin 'elixir-editors/vim-elixir'
 
 call vundle#end()
 filetype plugin indent on
