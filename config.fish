@@ -1,6 +1,6 @@
 #!/usr/bin/env fish
 
-eval $HOME/miniconda3/bin/conda "shell.fish" "hook" $argv | source
+eval /usr/local/Caskroom/miniconda/base/bin/conda "shell.fish" "hook" $argv | source
 
 set -gx PATH $PATH "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 set -gx PATH $PATH $GOPATH/bin

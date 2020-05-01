@@ -17,6 +17,8 @@ brew bundle
 
 mkdir -p ~/.config/fish/
 cp ./config.fish ~/.config/fish/config.fish
+
+# add gish to list of shells
 grep -qxF '/usr/local/bin/fish' /etc/shells || echo '/usr/local/bin/fish' | sudo tee -a /etc/shells
 
 # Get default shell
@@ -27,17 +29,20 @@ if [ "$DEFAULT_SHELL" != "$(which fish)" ]; then
   chsh -s $(which fish) $(whoami)
 fi
 
+# copy over vimrc
+cp .vimrc ~/.vimrc
 
 # install Vundle
-if [ -d "~/.vim/bundle/Vundle.vim" ]; then
+if [ "~/.vim/bundle/Vundle.vim" ]; then
   echo 'Vundle is not installed. Going to install Vundle' >&2
+  mkdir -p ~/.vim/bundle/
   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
 
-# # copy over vimrc
-cp .vimrc ~/.vimrc
+# install vundle plugins
+vim +BundleInstall! +BundleClean +qall
 
-# # copy over gitignore
+# copy over gitignore
 cp .gitignore ~/.gitignore
 cp .gitconfig ~/.gitconfig
 git config --global core.excludesfile ~/.gitignore
