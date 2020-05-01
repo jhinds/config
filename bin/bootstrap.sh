@@ -33,7 +33,7 @@ fi
 cp .vimrc ~/.vimrc
 
 # install Vundle
-if [ "~/.vim/bundle/Vundle.vim" ]; then
+if [ -d "~/.vim/bundle/Vundle.vim" ]; then
   echo 'Vundle is not installed. Going to install Vundle' >&2
   mkdir -p ~/.vim/bundle/
   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
