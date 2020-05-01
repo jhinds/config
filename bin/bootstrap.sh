@@ -15,7 +15,9 @@ printf "Copy Over Brewfile and Install\n"
 brew update
 brew bundle
 
+mkdir -p ~/.config/fish/
 cp ./config.fish ~/.config/fish/config.fish
+grep -qxF '/usr/local/bin/fish' /etc/shells || echo '/usr/local/bin/fish' | sudo tee -a /etc/shells
 
 # Get default shell
 DEFAULT_SHELL=$(finger $(whoami) | grep -o "Shell:.*" | awk -F ": " '{print $NF}')
