@@ -592,6 +592,12 @@
         "options": {
           "full_name": "visual-studio-code"
         }
+      },
+      "miniconda": {
+        "version": "4.7.12",
+        "options": {
+          "full_name": "miniconda"
+        }
       }
     }
   },
