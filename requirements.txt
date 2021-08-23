@@ -1,4 +1,4 @@
 ansible==2.9.6
 ipython==7.13.0
-jupyterlab==2.0.1
+jupyterlab==2.2.10
 neovim==0.3.1
